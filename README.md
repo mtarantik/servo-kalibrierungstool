@@ -15,3 +15,8 @@ Dieses Projekt ist eine Windows Forms Anwendung zur Kalibrierung von Servomotore
 1. **Clone das Repository**:
    ```bash
    git clone https://github.com/mtarantik/servo-kalibrierungstool.git
+
+
+Wenn der Fehler auftritt HTTP Listener -> Zugriff verweiget:
+ ```bash
+netsh http add urlacl url=http://+:80/MyUri user=DOMAIN\user
