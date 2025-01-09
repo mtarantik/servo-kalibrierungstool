@@ -109,7 +109,7 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // Form1
+            // ServoTesterGui
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -122,7 +122,7 @@
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(trackBar1);
-            Name = "Form1";
+            Name = "ServoTesterGui";
             Text = "ArduinoServoTester";
             ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
             ResumeLayout(false);

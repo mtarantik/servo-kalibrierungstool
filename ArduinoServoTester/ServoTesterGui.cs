@@ -37,8 +37,8 @@ namespace ArduinoServoTester
 
             if (request.HttpMethod == "GET")
             {
-                // Serve the HTML file
-                var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "index.html");
+                // Serve the HTML file from the res folder
+                var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "res", "index.html");
                 var responseString = File.ReadAllText(filePath);
                 var buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
                 response.ContentLength64 = buffer.Length;
@@ -46,6 +46,7 @@ namespace ArduinoServoTester
                 output.Write(buffer, 0, buffer.Length);
                 output.Close();
             }
+
 
             _listener.BeginGetContext(OnRequestReceived, null);
         }
