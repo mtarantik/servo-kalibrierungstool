@@ -17,6 +17,6 @@ Dieses Projekt ist eine Windows Forms Anwendung zur Kalibrierung von Servomotore
    git clone https://github.com/mtarantik/servo-kalibrierungstool.git
 
 
-Wenn der Fehler auftritt HTTP Listener -> Zugriff verweiget:
+Wenn der Fehler auftritt HTTP Listener -> Zugriff verweigert:
  ```bash
 netsh http add urlacl url=http://+:80/MyUri user=DOMAIN\user
